@@ -9,6 +9,15 @@
 - Adjust the number of people splitting the bill.
 - Calculate the amount per person with the tip included.
 
+### Architecture
+This app is built using the MVC (Model-View-Controller) design pattern:
+
+- Model: TipBrain class handles the bill and tip calculations.
+- View: The user interface is designed in the storyboard and linked to the ViewController and ResultVC classes.
+- Controller:
+ViewController manages user input and interactions.
+ResultVC displays the calculated results.
+
 ## Screenshots
 
 ![simulator_screenshot_DE7719FD-CD1B-479B-B9F3-EB326841636B](https://github.com/user-attachments/assets/0bd093f4-3d7b-493e-9069-f3a0b27d5b56)
