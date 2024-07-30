@@ -19,7 +19,7 @@ class ResultVC: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        totalPerPersonOT.text = String(total!)
+        totalPerPersonOT.text = String(format: "%0.1f",total!)
         detailsOT.text = des!
     }
     
