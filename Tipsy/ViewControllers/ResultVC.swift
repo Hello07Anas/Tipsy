@@ -12,10 +12,15 @@ class ResultVC: UIViewController {
     @IBOutlet weak var totalPerPersonOT: UILabel!
     @IBOutlet weak var detailsOT: UILabel!
     
+    var total: Double?
+    var des: String?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        totalPerPersonOT.text = String(total!)
+        detailsOT.text = des!
     }
     
 

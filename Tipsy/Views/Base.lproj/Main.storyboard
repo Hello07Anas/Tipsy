@@ -48,7 +48,7 @@
                                                             <action selector="tipBtn:" destination="i5t-5D-d1G" eventType="touchUpInside" id="N4h-hr-gP5"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b8V-dY-eaY">
+                                                    <button opaque="NO" tag="1" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b8V-dY-eaY">
                                                         <rect key="frame" x="95.333333333333329" y="0.0" width="162.33333333333337" height="54"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="54" id="Bw6-dG-vkh"/>
@@ -62,7 +62,7 @@
                                                             <action selector="tipBtn:" destination="i5t-5D-d1G" eventType="touchUpInside" id="j96-eb-mkQ"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tjc-3t-nUl">
+                                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tjc-3t-nUl">
                                                         <rect key="frame" x="257.66666666666669" y="0.0" width="95.333333333333314" height="54"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="54" id="oCX-3Q-xiY"/>
@@ -199,7 +199,10 @@
                     </view>
                     <connections>
                         <outlet property="splitCounterOT" destination="2WA-7g-yIA" id="MQX-ir-rDa"/>
+                        <outlet property="tensBtnOT" destination="b8V-dY-eaY" id="3KF-3V-xrD"/>
                         <outlet property="totalBillOT" destination="2Fq-xp-aOu" id="rM6-F5-buh"/>
+                        <outlet property="twentyBtnOT" destination="Tjc-3t-nUl" id="Lbt-3x-K9z"/>
+                        <outlet property="zeroBtnOT" destination="Idb-Jk-1XP" id="DzZ-G1-vwv"/>
                         <segue destination="Tcm-wO-4Lk" kind="presentation" id="KW1-uq-FGx"/>
                     </connections>
                 </viewController>
@@ -210,7 +213,7 @@
         <!--ResultVC-->
         <scene sceneID="art-iZ-yO7">
             <objects>
-                <viewController id="Tcm-wO-4Lk" customClass="ResultVC" customModule="Tipsy" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ResultVC" id="Tcm-wO-4Lk" customClass="ResultVC" customModule="Tipsy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Zik-Fo-jim">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
